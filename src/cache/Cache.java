@@ -26,7 +26,7 @@ public class Cache<Key, Value> {
             this.storage.add(key, value);
             this.evictionStrategy.keyAccessed(key);
         } catch (MemoryExceededException exception) {
-            System.out.print("cache.Cache capacity full, evicting one item\n");
+            System.out.print("Cache capacity full, evicting one item \n");
             Key removedKey = evictionStrategy.evictKey();
             if(removedKey == null) {
                 throw new  RuntimeException("Failed to evict the element, unexpected error occured\n");

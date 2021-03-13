@@ -13,12 +13,12 @@ public class Main {
         cache.put("hello", "hello");
         cache.put("test", "test");
         cache.put("hai", "hai");
-        cache.put("replace", "replace");
+        cache.put("nurture", "farm");
 
-        System.out.println(cache.get("hello"));
-        System.out.println(cache.get("replace"));
+        System.out.println("Value of hello --> " + cache.get("hello"));
+        System.out.println("Value of nurture --> " + cache.get("nurture"));
 
-        cache.put("hai", "new Hai");
+        cache.put("hai", "Hello Nurture Farm");
         System.out.println(cache.get("hai"));
 
 
