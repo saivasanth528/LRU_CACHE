@@ -1,0 +1,5 @@
+1. Defining the data structure for cache - done
+2. Insert, lookup and get operations - done
+3. Main eviction strategy - done
+4. Support for multiple strategies - in progress
+5. Support for LFU in future - in progress
