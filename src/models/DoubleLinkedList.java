@@ -73,14 +73,6 @@ public class DoubleLinkedList<E> {
         return  dummyHead.next;
     }
 
-    public DoubleLinkedListNode getLastNode() {
-        if(isListEmpty()) {
-            return null;
-        }
-        return  dummyTail.prev;
-    }
-
-
 
 
 

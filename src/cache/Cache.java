@@ -38,6 +38,12 @@ public class Cache<Key, Value> {
         }
     }
 
+    /**
+     * If the key is present it returns the value, otherwise null
+     * @param key
+     * @return
+     */
+
     public Value get(Key key) {
         try {
             Value value = this.storage.get(key);

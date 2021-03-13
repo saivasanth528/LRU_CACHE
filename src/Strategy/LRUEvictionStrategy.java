@@ -23,6 +23,11 @@ public class LRUEvictionStrategy<Key> implements Eviction<Key> {
         this.referencer = new HashMap<>();
     }
 
+    /**
+     * In this strategy whenever an element is accessed, we are moving that to  node to the end of the linkedlist
+     *
+     * @param key
+     */
 
     @Override
     public void keyAccessed(Key key) {
